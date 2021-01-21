@@ -1,3 +1,4 @@
+// hello Sidd
 exports = async function() {
   
   // Supply projectID and clusterNames...
@@ -15,7 +16,7 @@ exports = async function() {
   
   clusterNames.forEach(async function (name) {
     result = "Nothing";
-    //await context.functions.execute('modifyCluster', username, password, projectID, name, body)
+    //await context.functions.execute('modifyCluster', username, password, projectID, name, body) 
     console.log("Cluster " + name + ": " + EJSON.stringify(result));
     
     if (result.error) { 
